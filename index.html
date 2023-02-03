@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Calculadora</title>
 </head>
 
-<body>
+<body  onload="script()">
     <h1>Calculadora</h1>
     <!-- <div class="container">
         <div>1</div>
@@ -22,21 +23,21 @@
      <div class="container" id="template-areas">
         <div class="calculadora">
             
-            <div id="display" class="display"><p class="content">1234</p></div>
+            <div id="display" class="display"><p id="displayContent" class="content">1234</p></div>
             <div id="ce"><button>CE</button></div>
-            <div id="dividido"><button > / </button></div>
-            <div id="sete"><button > 7</button></div>
-            <div id="oito"><button > 8</button></div>
-            <div id="nove"><button > 9</button></div>
-            <div id="mais"><button > +</button></div>
-            <div id="quatro"><button >4</button></div>
-            <div id="cinco"><button> 5</button></div>
-            <div id="seis"><button > 6</button></div>
-            <div id="menos"><button >-</button></div>
-            <div id="um"><button > 1</button></div>
-            <div id="dois"><button > 2</button></div>
-            <div id="tres"><button > 3</button></div>
-            <div id="X"><button >X</button></div>
+            <div id="dividido"><button id="btnDivisao"> / </button></div>
+            <div id="sete"><button id="7"> 7</button></div>
+            <div id="oito"><button id="8"> 8</button></div>
+            <div id="nove"><button id="9"> 9</button></div>
+            <div id="mais"><button id="btnMais"> +</button></div>
+            <div id="quatro"><button id="4">4</button></div>
+            <div id="cinco"><button id="5"> 5</button></div>
+            <div id="seis"><button id="6"> 6</button></div>
+            <div id="menos"><button id="btnMenos">-</button></div>
+            <div id="um"><button id="1"> 1</button></div>
+            <div id="dois"><button id="2"> 2</button></div>
+            <div id="tres"><button id="3"> 3</button></div>
+            <div id="X"><button id="btnVezes">X</button></div>
             <div id="igual"><button class="content">=</button></div>
 
         </div>
