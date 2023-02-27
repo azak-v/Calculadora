@@ -1,4 +1,10 @@
-
+:root{
+    --black: rgb(37, 37, 37);
+    --darkRed: rgb(61, 0, 0);
+    --mediumRed: rgb(149, 1, 1);
+    --lightRed: rgb(255, 0, 0);
+    --trueBlack: rgb(0, 0, 0);
+}
 body{
     display: flex;
     position: absolute;
@@ -7,13 +13,14 @@ body{
     height: 100%;
     overflow: hidden;
     justify-content: center;
+    background-color: var(--black);
   
 }
 
 .container .calculadora{
     display: grid;
     justify-content: center;
-    background-color: white;
+    background-color: var(--black);
     /* border: 1px solid blue; */
     grid-template-areas: 
     'display display display display'
@@ -31,19 +38,19 @@ body{
 }
 
 .container .calculadora div button{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(243, 241, 241);
-    border-top-color: rgb(243, 241, 241);
-    border-left-color: rgb(243, 241, 241);
-    border-right-color: rgb(243, 241, 241);
-    border-bottom-color: rgb(221, 220, 220);
+    width: 94%;
+    height: 94%;
+    background-color: var(--mediumRed);
+    border-top-color: var(--mediumRed);
+    border-left-color: var(--mediumRed);
+    border-right-color: var(--mediumRed);
+    border-bottom-color: var(--lightRed);
     border-radius: 10px;
     border-style: solid;
     cursor: pointer;
 }
 .container .calculadora div button:active{
-    background-color: rgb(185, 185, 185);
+    background-color: var(--darkRed);
 }
 
 
@@ -53,11 +60,11 @@ body{
     display: flex;
     padding-right: 5%;
     justify-content: end;
-    background-color: rgb(74, 228, 74, 0.836);
-    border-top-color: rgb(74, 228, 74, 0.836);
-    border-left-color: rgb(74, 228, 74, 0.836);
-    border-right-color: rgb(74, 228, 74, 0.836);
-    border-bottom-color: rgb(117, 179, 112);
+    background-color: var(--darkRed);
+    border-top-color: var(--darkRed);
+    border-left-color: var(--darkRed);
+    border-right-color: var(--darkRed);
+    border-bottom-color: var(--trueBlack);
     border-radius: 10px;
     border-style: solid;
 }

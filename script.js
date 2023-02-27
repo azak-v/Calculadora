@@ -7,7 +7,7 @@ function script(){
 // Select all button in page.
   botoes = document.querySelectorAll("button");
 
-// get display input
+// Get display input.
 const display = document.getElementById("displayContent");
 
 // Add an event listener to all button's (after, change to number buttons);
@@ -52,8 +52,6 @@ const display = document.getElementById("displayContent");
     });
   });
 
-
-
 function changeDisplay(char){
     display.innerText += char;
 }
@@ -63,12 +61,11 @@ function zeroDisplay(){
 }
 
 function saveCurrentValue(){
-    currentValue = parseInt(display.innerText);
-    
+    currentValue = parseFloat(display.innerText);
 }
 
 function saveLastValue(){
-    lastValue = parseInt(display.innerText);
+    lastValue = parseFloat(display.innerText);
 }
 
 
